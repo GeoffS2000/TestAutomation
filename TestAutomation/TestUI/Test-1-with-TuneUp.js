@@ -26,7 +26,8 @@ test("Test 1", function(target, app) {
      //-- tap on the text fiels
      UIALogger.logMessage( "Dismiss the keyboard" );
      app.logElementTree();
-     app.keyboard().buttons()["return"].tap();
+     //app.keyboard().buttons()["return"].tap();
+	 app.keyboard().typeString("\n");
 	 
 	 var textValue = window.staticTexts()["RecipeName"].value();
 
